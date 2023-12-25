@@ -1,0 +1,28 @@
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafbff;
+  font-family: Poppins;
+  display: flex;
+}
+a {
+  font-family: Poppins;
+  font-style: normal;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+@media screen and (min-width: 780px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}

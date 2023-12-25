@@ -4,21 +4,278 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Test Task Krizhanovsky Aleksandr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- MENU -->
+    <button class="menu-btn" type="button">
+      <svg height="36" width="36" style="stroke: black">
+        <use href="./img/symbol-defs.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="menu">
+      <button class="menu-btn-close" type="button">
+        <svg width="20" height="20">
+          <use href="./img/symbol-defs.svg#icon-cancel-circle"></use>
+        </svg>
+      </button>
+      <nav class="menu-nav">
+        <ul class="menu-logo-list">
+          <li>
+            <a href=""
+              ><svg width="37" height="37">
+                <use href="./img/symbol-defs.svg#icon-setting"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="menu-logo-title" href="">
+              Dashboard<span class="menu-logo-title-part">v.01</span>
+            </a>
+          </li>
+        </ul>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+        <ul class="menu-nav-list">
+          <li>
+            <a href="" class="menu-nav-link"
+              ><svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-key-square"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-nav-link">
+              <svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-d-square"></use>
+              </svg>
+              Product
+              <svg class="menu-icon-chevron" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-nav-link">
+              <svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-user-square"></use>
+              </svg>
+              Customers
+              <svg class="menu-icon-chevron" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-nav-link">
+              <svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-wallet-money"></use>
+              </svg>
+              Income
+              <svg class="menu-icon-chevron" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-nav-link">
+              <svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-discount-shape"></use>
+              </svg>
+              Promote
+              <svg class="menu-icon-chevron" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-nav-link">
+              <svg height="24" width="24" class="menu-link-svg">
+                <use href="./img/symbol-defs.svg#icon-message-question"></use>
+              </svg>
+              Help
+              <svg class="menu-icon-chevron" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-user-info">
+        <div class="menu-user-img">
+          <img
+            width="42"
+            height="42"
+            src="./img/photo-user.jpg"
+            alt="User Icon"
+          />
+        </div>
+        <ul class="menu-user-list">
+          <li><p class="menu-user-name">Evano</p></li>
+          <li><p class="menu-user-job">Project Manager</p></li>
+        </ul>
+      </div>
+    </div>
+    <!-- PAGE -->
+    <section class="page">
+      <h1 class="page-title">Hello Evano 👋🏼,</h1>
+      <div class="page-area">
+        <div class="page-area-cearch">
+          <ul class="page-list">
+            <li><p class="page-subtitle-first">All Customers</p></li>
+            <li><p class="page-subtitle-second">Active Members</p></li>
+          </ul>
+          <div class="page-box-search">
+            <input class="page-input" type="text" placeholder="Search" /><svg
+              height="24"
+              width="24"
+            >
+              <use href="./img/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="page-list-and-slider">
+          <ul class="page-list-customers">
+            <li class="page-after">
+              <p class="page-list-subtitle">Customer Name</p>
+            </li>
+            <li><p class="page-list-subtitle">Company</p></li>
+            <li>
+              <p class="page-list-subtitle ignor sub-ignor">Phone Number</p>
+            </li>
+            <li><p class="page-list-subtitle ignor sub-ignor">Email</p></li>
+            <li><p class="page-list-subtitle ignor">Country</p></li>
+            <li><p class="page-list-subtitle">Status</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Jane Cooper</p>
+            </li>
+            <li><p class="page-list-item">Microsoft</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(225) 555-0118</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">jane@microsoft.com</p>
+            </li>
+            <li><p class="page-list-item ignor">United States</p></li>
+            <li><p class="page-list-status-active">Active</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Floyd Miles</p>
+            </li>
+            <li><p class="page-list-item">Yahoo</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(205) 555-0100</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">floyd@yahoo.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Kiribati</p></li>
+            <li><p class="page-list-status-inactive">Inactive</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Ronald Richards</p>
+            </li>
+            <li><p class="page-list-item">Adobe</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(302) 555-0107</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">ronald@adobe.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Israel</p></li>
+            <li><p class="page-list-status-inactive">Inactive</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Marvin McKinney</p>
+            </li>
+            <li><p class="page-list-item">Tesla</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(252) 555-0126</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">marvin@tesla.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Iran</p></li>
+            <li><p class="page-list-status-active">Active</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Jerome Bell</p>
+            </li>
+            <li><p class="page-list-item">Google</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(629) 555-0129</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">jerome@google.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Réunion</p></li>
+            <li><p class="page-list-status-active">Active</p></li>
+
+            <li><p class="page-list-item">Kathryn Murphy</p></li>
+            <li><p class="page-list-item">Microsoft</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(406) 555-0120</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">
+                kathryn@microsoft.com
+              </p>
+            </li>
+            <li><p class="page-list-item ignor">Curaçao</p></li>
+            <li><p class="page-list-status-active">Active</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Jacob Jones</p>
+            </li>
+            <li><p class="page-list-item">Yahoo</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(208) 555-0112</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">jacob@yahoo.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Brazil</p></li>
+            <li><p class="page-list-status-active">Active</p></li>
+
+            <li class="page-after">
+              <p class="page-list-item">Kristin Watson</p>
+            </li>
+            <li><p class="page-list-item ignor">Facebook</p></li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">(704) 555-0127</p>
+            </li>
+            <li>
+              <p class="page-list-item ignor sub-ignor">kristin@facebook.com</p>
+            </li>
+            <li><p class="page-list-item ignor">Åland Islands</p></li>
+            <li><p class="page-list-status-inactive">Inactive</p></li>
+          </ul>
+          <div class="page-slader">
+            <p class="page-list-subtitle">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <ul class="page-list-btns">
+              <li><button class="page-btn btn-cont" type="button"></button></li>
+              <li><button class="page-btn" type="button">1</button></li>
+              <li><button class="page-btn" type="button">2</button></li>
+              <li><button class="page-btn" type="button">3</button></li>
+              <li><button class="page-btn" type="button">4</button></li>
+              <li><p>...</p></li>
+              <li><button class="page-btn" type="button">40</button></li>
+              <li><button class="page-btn" type="button">></button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
